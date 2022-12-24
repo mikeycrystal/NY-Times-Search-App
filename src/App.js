@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { auth } from "./fire";
-import Hero from "./Hero";
+import NYT_App from "./NYT_App";
 import Login from "./Login";
 
 const App = () => {
@@ -74,7 +74,7 @@ const App = () => {
   return (
     <div>
       {user ? (
-        <Hero handleLogout={handleLogout} />
+        <NYT_App handleLogout={handleLogout} />
       ) : (
         <Login
           email={email}

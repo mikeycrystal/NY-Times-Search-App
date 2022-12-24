@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import SearchForm from "./SearchForm";
 
-const Hero = ({ handleLogout }) => {
+const NYT_App = ({ handleLogout }) => {
   const [articles, setArticles] = useState([]);
   const [term, setTerm] = useState("everything");
   useEffect(() => {
@@ -22,11 +22,13 @@ const Hero = ({ handleLogout }) => {
   return (
     <>
       <div className="showcase">
+        <button onClick={handleLogout} className="button-logout">
+          Logout
+        </button>
         <div className="overlay px-5">
           <h1 className="text-4xl font-bold text-black py-5 mb-4 capitalize lg:text6xl">
             Viewing articles about {term}
           </h1>
-          <button onClick={handleLogout}>Logout</button>
           <SearchForm searchText={(text) => setTerm(text)} />
         </div>
       </div>
@@ -78,4 +80,4 @@ const Hero = ({ handleLogout }) => {
   );
 };
 
-export default Hero;
+export default NYT_App;
