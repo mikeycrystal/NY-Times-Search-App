@@ -44,7 +44,6 @@ const App = () => {
             web_url,
             _id,
             word_count,
-            pub_date,
           } = article;
 
           return (
@@ -67,9 +66,6 @@ const App = () => {
                 </li>
                 <li>
                   <span className="font-bold">Word Count:</span> {word_count}
-                </li>
-                <li>
-                  <span className="font-bold">Date of Publish:</span> {pub_date}
                 </li>
               </ul>
               <a href={web_url} target="_blank" className="underline">
