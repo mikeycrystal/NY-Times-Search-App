@@ -20,7 +20,7 @@ const SearchForm = ({ searchText }) => {
         />
         <button
           type="submit"
-          className="bg-green-400 py-1 px-2 rounded-right-lg text-white"
+          className="bg-green-400 py-1 px-2 rounded-r-lg text-white"
         >
           Search
         </button>
