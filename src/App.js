@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { auth } from "./fire";
-import NYT_App from "./NYT_App";
+import NYT_APP from "./NYT_App";
 import Login from "./Login";
 
 const App = () => {
@@ -69,12 +69,12 @@ const App = () => {
 
   useEffect(() => {
     authListener();
-  }, []);
+  });
 
   return (
     <div>
       {user ? (
-        <NYT_App handleLogout={handleLogout} />
+        <NYT_APP handleLogout={handleLogout} />
       ) : (
         <Login
           email={email}

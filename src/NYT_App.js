@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import SearchForm from "./SearchForm";
 
-const NYT_App = ({ handleLogout }) => {
+const NYT_APP = ({ handleLogout }) => {
   const [articles, setArticles] = useState([]);
   const [term, setTerm] = useState("everything");
   useEffect(() => {
@@ -80,4 +80,4 @@ const NYT_App = ({ handleLogout }) => {
   );
 };
 
-export default NYT_App;
+export default NYT_APP;
