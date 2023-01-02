@@ -1,6 +1,6 @@
 Created an application that allows users to browse for articles in the New York Times. 
 
-Technologies used: React.js, TailwindCSS, Firebase, Git
+Technologies used: React.js, TailwindCSS, Firebase, REST APIs, Git
 
 
 # Getting Started with Create React App
