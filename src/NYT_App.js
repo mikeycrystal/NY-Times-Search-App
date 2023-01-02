@@ -4,6 +4,7 @@ import SearchForm from "./SearchForm";
 const NYT_APP = ({ handleLogout }) => {
   const [articles, setArticles] = useState([]);
   const [term, setTerm] = useState("everything");
+
   useEffect(() => {
     const fetchArticles = async () => {
       try {
@@ -33,13 +34,12 @@ const NYT_APP = ({ handleLogout }) => {
         </div>
       </div>
 
-      <section className="grid grid-cols-1 gap-10 px-5 pt-10 pb-20">
+      <section className="grid grid-cols-2 gap-10 px-5 pt-10 pb-20">
         {articles.map((article) => {
           const {
             abstract,
             headline: { main },
             byline: { original },
-            lead_paragraph,
             news_desk,
             section_name,
             web_url,
@@ -54,7 +54,6 @@ const NYT_APP = ({ handleLogout }) => {
             >
               <h2 className="font-bold text-2xl mb-2 lg:text-4xl">{main}</h2>
               <p>{abstract}</p>
-              <p>{lead_paragraph}</p>
 
               <ul className="my-4">
                 <li>{original}</li>
