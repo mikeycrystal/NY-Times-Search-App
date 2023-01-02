@@ -1,3 +1,8 @@
+Created an application that allows users to browse for articles in the New York Times. 
+
+Technologies used: React.js, TailwindCSS, Firebase, Git
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
